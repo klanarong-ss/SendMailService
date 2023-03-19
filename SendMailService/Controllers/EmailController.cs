@@ -17,10 +17,17 @@ namespace SendMailService.Controllers
         }
 
         [HttpGet]
-        [Route("Test")]
-        public IActionResult Test()
+        [Route("Test-1")]
+        public IActionResult Test1()
         {
             return Ok("Test-01");
+        }
+
+        [HttpGet]
+        [Route("Test-2")]
+        public IActionResult Test2()
+        {
+            return Ok("Test-02");
         }
 
         [HttpPost]
