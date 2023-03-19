@@ -33,5 +33,5 @@ jobs:
             cd /home/work_space/SendMailService
             git checkout test
             git pull
-            docker pull klanarong/sendmail-service:latest
+            docker pull klanarong/sendmail-service
             docker-compose up -d --force-recreate
