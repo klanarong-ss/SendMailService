@@ -31,7 +31,7 @@ jobs:
           port: 22
           script: |
             cd /home/work_space/SendMailService
+            git checkout dev
             git pull
-            git checkout test
             docker pull klanarong/sendmail-service:latest
             docker-compose up -d --force-recreate
