@@ -10,4 +10,4 @@ services:
       - '95:80'
     restart: always
 networks:
-  'honeycomb'
+  honeycomb
