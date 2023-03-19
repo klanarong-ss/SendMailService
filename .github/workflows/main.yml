@@ -30,7 +30,7 @@ jobs:
           key: ${{secrets.SSH_KEY}}
           port: 22
           script: |
-            cd /home/work_space/sendmail-service/sendmail-service
+            cd /home/work_space/SendMailService
             git checkout test
             git pull
             docker pull klanarong/sendmail-service:latest
