@@ -7,9 +7,9 @@ services:
     environment:
       - TZ=Asia/Bankkok
     ports:
-      - '95:8080/tcp'
+      - '95:80'
     restart: always
-networks:
-  default:
-    external:
-      name: honeycomb
+# networks:
+#   default:
+#     external:
+#       name: honeycomb
