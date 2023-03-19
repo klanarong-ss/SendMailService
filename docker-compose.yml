@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  sendmail-service: 
+    hostname: sendmail-service
+    container_name: sendmail-service
+    image: klanarong/sendmail-service:latest
+    environment:
+      - TZ=Asia/Bankkok
+    ports:
+      - '91:80'
+    restart: always
