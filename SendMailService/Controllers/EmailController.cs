@@ -11,7 +11,20 @@ namespace SendMailService.Controllers
     [ApiController]
     public class EmailController : ControllerBase
     {
+        public EmailController()
+        {
+
+        }
+
+        [HttpGet]
+        [Route("Test")]
+        public IActionResult Test()
+        {
+            return Ok("Test-01");
+        }
+
         [HttpPost]
+        [Route("SendEmail")]
         public IActionResult SendEmail(string body)
         {
             var email = new MimeMessage();
