@@ -23,7 +23,7 @@ namespace SendMailService.Controllers
             return Ok("Test-01");
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("Test-2")]
         public IActionResult Test2()
         {
