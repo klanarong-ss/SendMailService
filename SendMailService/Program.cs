@@ -29,6 +29,12 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 
+// global cors policy
+app.UseCors(x => x
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader());
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
